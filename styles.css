@@ -942,30 +942,16 @@ img {
 }
 
 .experience-company {
-  position: absolute;
-  top: -34px;
-  right: 32px;
   display: inline-flex;
   align-items: center;
-  justify-content: flex-end;
-  padding: 10px 32px 10px 52px;
-  border-radius: 999px;
+  padding: 8px 16px;
+  border-radius: 20px;
   font-weight: 600;
-  font-size: 0.92rem;
-  text-transform: uppercase;
-  letter-spacing: 0.16em;
-  color: rgba(15, 17, 21, 0.78);
-  /* background: linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(228, 230, 236, 0.72)); */
-  border: 1px solid rgba(15, 17, 21, 0.08);
-  box-shadow: 0 20px 40px -24px rgba(15, 17, 21, 0.55);
-  pointer-events: none;
-  overflow: hidden;
-  z-index: 1;
-  isolation: isolate;
-  max-width: calc(100% - 64px);
-  white-space: normal;
-  line-height: 1.4;
-  text-align: right;
+  font-size: 0.9rem;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border: 1px solid rgba(37, 99, 235, 0.2);
+  margin-bottom: 8px;
   --reveal-offset: 18px;
   --reveal-scale: 0.9;
   --reveal-blur: 18px;
@@ -975,32 +961,6 @@ img {
   --reveal-rotate: -0.6deg;
 }
 
-.experience-company::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  /* background: repeating-linear-gradient(
-      98deg,
-      rgba(255, 70, 85, 0.16) 0 18px,
-      transparent 18px 36px
-    ); */
-  opacity: 0.45;
-  mix-blend-mode: multiply;
-  pointer-events: none;
-}
-
-.experience-company::after {
-  content: '';
-  position: absolute;
-  left: 20px;
-  top: 50%;
-  width: 18px;
-  height: 2px;
-  border-radius: 999px;
-  background: linear-gradient(90deg, var(--f1-red), var(--photo-amber));
-  transform: translateY(-50%);
-  box-shadow: 0 0 12px rgba(255, 70, 85, 0.4);
-}
 
 
 .experience-card p {
@@ -1494,10 +1454,6 @@ img {
   }
 
   .experience-company {
-    right: 24px;
-    top: -30px;
-    padding: 10px 28px 10px 48px;
-    max-width: calc(100% - 48px);
     --reveal-x: 0px;
     --reveal-rotate: 0deg;
   }
@@ -1596,16 +1552,7 @@ img {
   }
 
   .experience-company {
-    right: 18px;
-    top: -26px;
-    padding: 10px 24px 10px 44px;
-    max-width: calc(100% - 36px);
     --reveal-rotate: 0deg;
-  }
-
-  .experience-company::after {
-    left: 18px;
-    width: 14px;
   }
 
   .legal-card {
