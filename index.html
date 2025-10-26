@@ -591,6 +591,17 @@
     </footer>
 
     <script>
+      // Basic image protection
+      document.addEventListener('contextmenu', e => e.preventDefault());
+      document.addEventListener('keydown', e => {
+        if (e.key === 'F12' || 
+            (e.ctrlKey && e.shiftKey && e.key === 'I') ||
+            (e.ctrlKey && e.key === 'u') ||
+            (e.ctrlKey && e.key === 's')) {
+          e.preventDefault();
+        }
+      });
+
       const navToggle = document.querySelector(".nav-toggle");
       const siteNav = document.querySelector(".site-nav");
 

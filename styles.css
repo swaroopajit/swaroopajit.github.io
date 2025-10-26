@@ -1147,6 +1147,11 @@ img {
   z-index: 0;
   border-radius: inherit;
   clip-path: inset(0 round var(--photo-radius));
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  pointer-events: none;
 }
 
 .photo-card:hover img {
