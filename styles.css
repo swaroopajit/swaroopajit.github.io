@@ -1024,7 +1024,7 @@ img {
   grid-template-columns: repeat(12, minmax(0, 1fr));
   grid-auto-rows: var(--photo-grid-row);
   grid-auto-flow: dense;
-  gap: 28px;
+  gap: 20px;
   position: relative;
   padding: 12px 0 40px;
   isolation: isolate;
@@ -1034,7 +1034,7 @@ img {
 .instagram-embed {
   background: white;
   border-radius: 24px;
-  padding: 20px;
+  padding: 18px;
   border: 1px solid var(--border);
   box-shadow: var(--shadow-card);
   position: relative;
@@ -1330,35 +1330,45 @@ body.lightbox-open {
 }
 
 .photo-card:nth-child(1) {
-  grid-column: 1 / span 5;
-  --tilt: -1.6deg;
-  --lift: 12px;
-  z-index: 3;
+  grid-column: 1 / span 4;
+  --tilt: 0deg;
+  --lift: 0px;
 }
 
 .photo-card:nth-child(2) {
-  grid-column: 6 / span 4;
-  --tilt: 1.8deg;
-  --lift: -6px;
-  z-index: 2;
+  grid-column: 5 / span 4;
+  --tilt: 0deg;
+  --lift: 15px;
 }
 
 .photo-card:nth-child(3) {
-  grid-column: 10 / span 3;
-  --tilt: -0.9deg;
-  --lift: 10px;
+  grid-column: 9 / span 4;
+  --tilt: 0deg;
+  --lift: 0px;
 }
 
 .photo-card:nth-child(4) {
-  grid-column: 2 / span 4;
-  --tilt: 1.1deg;
-  --lift: -12px;
+  grid-column: 1 / span 3;
+  --tilt: 0deg;
+  --lift: -15px;
 }
 
 .photo-card:nth-child(5) {
-  grid-column: 7 / span 5;
-  --tilt: -1.2deg;
-  --lift: 14px;
+  grid-column: 4 / span 5;
+  --tilt: 0deg;
+  --lift: 20px;
+}
+
+.photo-card:nth-child(6) {
+  grid-column: 9 / span 4;
+  --tilt: 0deg;
+  --lift: 22px;
+}
+
+.photo-card:nth-child(7) {
+  grid-column: 4 / span 7;
+  --tilt: 0deg;
+  --lift: 20px;
 }
 
 .site-footer {
